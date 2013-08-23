@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>How to use Ruby ?</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h2>How to use Ruby ?</h2>
+					<p>
+						<small>Created by <a href="http://www.turkishcoders.com">Ahmet ERKOÇ</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Topics</h2>
+					<ol>
+						<li class="fragment">Why should  use Ruby ?</li>
+						<li class="fragment">Why shouldn’t  use Ruby?</li>
+						<li class="fragment">Introduction to programing with Ruby</li>
+						<li class="fragment">Questions</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Why should  use Ruby ?</h2>
+					<ol>
+						<li class="fragment">It is simple to learn and coding.</li>
+						<li class="fragment">Stronger</li>
+						<li class="fragment">Rich library</li>
+						<li class="fragment">Fast development</li>
+						<li class="fragment">Helpful ruby community</li>
+						<li class="fragment">Open Source</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Why shouldn't use Ruby ?</h2>
+					<ol>
+						<li class="fragment">It is not fast as much as Perl or Python even if you use in C code.</li>
+						<li class="fragment">Doesn’t have good Virtual Machine(Ruby2,RITE)</li>
+						<li class="fragment">It is not know by many person.</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Introduction to programing with Ruby</h2>
+				
+					<pre class="fragment"><code>puts “Hello World!”</code></pre>
+					<pre class="fragment"><code>print “Hello World!”</code></pre>
+					<pre class="fragment"><code>print “Hello” + “World!”</code></pre>
+				
+				</section>
+
+				<section>
+					<h2>Look At This One!</h2>
+				    <br/>
+					<pre class="fragment"><code>5.times do print "Ruby " end</code></pre>
+
+                    <li class="fragment"><h4>Does It Works ????</h4></li>
+
+                    <pre class="fragment"><code>Ruby Ruby Ruby Ruby Ruby</code></pre>
+
+                  				
+					
+				
+				</section>
+
+				<section>
+				    <h2>Single Quotation/Double Quotation?</h2>
+					<pre class="fragment"><code>a="1 2 3 4 5 #{2*3} 7 8 9 10"</code></pre>
+					<li class="fragment">"1 2 3 4 5 6 7 8 9 10"</li>
+					<pre class="fragment"><code>b='1 2 3 4 5 #{2*3} 7 8 9 10'</code></pre>
+					<li class="fragment">"1 2 3 4 5 \#{2*3} 7 8 9 10"</li>
+				
+				</section>
+
+				<section>
+					
+			
+					<li class="fragment">for the backtick( like tarih=’date’)</br>
+								  	     use single quotation
+					</li>
+				     </br>
+					<li class="fragment">word=”free”+”software”</br>
+									     word=word * 2
+					</li>
+				
+				</section>
+
+				<section>
+				    <h2>Character Selection</h2>
+					<pre class="fragment"><code>word=”ruby”</code></pre>
+					<pre class="fragment"><code>word[0]</code></pre>
+					<li class="fragment">114 </li> <li class="fragment"># r-> ASCII value </li>
+					<pre class="fragment"><code>word[-1]</code></pre>
+					<li class="fragment">121 # y -> ASCII value</li>
+				
+				</section>
+
+				<section>
+				    <h2>Check Equality</h2>
+					<pre class="fragment"><code>word=”ruby”</code></pre>
+					<pre class="fragment"><code>“ruby”==”ruby”</code></pre>
+					<li class="fragment">True</li>
+					<pre class="fragment"><code>“ruby”==”perl”</code></pre>
+					<li class="fragment">False</li>
+				
+				</section>
+
+				<section>
+				    <h2>Selection of Subarray</h2>
+					<pre class="fragment"><code>word=”ruby”</code></pre>
+					<pre class="fragment"><code>word[0..2]</code></pre>
+					<li class="fragment">rub</li>
+					<pre class="fragment"><code>word[0,1]</code></pre>
+					<li class="fragment">r</li>
+					<pre class="fragment"><code>word[-2,2]</code></pre>
+					<li class="fragment">"by"</li>
+				
+				</section>
+
+				<section>
+					<h2>Arrays in Ruby</h2>
+						<li class="fragment">Same type in array?</li>
+						<pre class="fragment"><code>arr=[1.9,3,”ruby”]</code></pre>
+						<li class="fragment">[1.9,3,”ruby”]</li>
+						<pre class="fragment"><code>arr*2</code></pre>
+						<li class="fragment">[1.9,3,”ruby”,1.9,3,”ruby”]</li>
+						<pre class="fragment"><code>arr+[“Fatih”,”university”]</code></pre>
+						<li class="fragment">[1.9,3,”ruby”,”Fatih”,”university”]</li>	
+				</section>
+
+				<section>
+						<pre class="fragment"><code>array=[“12”,”21”,”ruby”]
+dizi.to_s</code></pre>
+						<li class="fragment">“1221ruby”</li>
+						<pre class="fragment"><code>array=”12:21:ruby”
+dizi.to_a</code></pre>
+						<li class="fragment">[“12:21:ruby”]</li>
+						<pre class="fragment"><code>array.split(“:”)</code></pre>
+						<li class="fragment">[“12”,”21”,”ruby”]</li>	
+				</section>
+
+				<section>
+					<h2>Control Structure</h2>
+						<pre class="fragment"><code>for i in [200,-3.6,”ruby”]
+         print “#{i}\t(#{i.type})\n”
+end</code></pre>
+						<li class="fragment">200  (Fixnum)
+-3.6  (Float)
+ruby (String)</li>
+						<pre class="fragment"><code>array=[200,-3.6,”ruby”]
+array.each do |i|
+   print i
+end</code></pre>
+						<li class="fragment">200-3,6ruby</li>
+				</section>
+
+               <section>
+					<h2>If Else If Syntax</h2>
+					<br/>
+						
+						<pre class="fragment"><code>if var == 10
+   print “Variable is 10″
+elsif var == “20″
+   print “Variable is 20″
+else
+   print “Variable is something else”
+end</code></pre>
+						
+				</section>
+
+				<section>
+
+					<h2>Basic example of Class</h2>
+						<pre class="fragment"><code>class Mammal // Be careful first letter of class name must be capital.
+   def breath
+     print “Take breath”
+    end
+end</code></pre>
+						<pre class="fragment"><code>class Cat < Mammal // inheritance
+   def speak
+       print “Miyav\n”
+end
+end
+</code></pre>
+						<pre class="fragment"><code>pisi=Cat.new
+pisi.breath</code></pre>
+						<li class="fragment">Take breath</li>
+						<pre class="fragment"><code>pisi.speak</code></pre>
+						<li class="fragment">Miyav</li>	
+				</section>
+
+                <section>
+					<h2>How to Interprete Ruby Code</h2>
+					<li class="fragment">1-On Eclipse</li>
+					<li class="fragment">2-On Visual Studio</li>
+					<li class="fragment">3-On Irb(intercative Ruby)</li>
+					<li class="fragment">4-On Terminal(Command Line)--->Thats I offer.</li>
+					
+				</section>
+
+				<section>
+					<h2>interactive Ruby – irb</h2>
+					<li class="fragment">Irb is kind of tool that  takes the statement from stdin then read and execute.</li>
+					<img class="fragment" src="img/irb.png">
+				</section>
+
+				<section>
+					<h2>On Terminal</h2>
+					<li class="fragment">I offer this one.If you use this one you are not going to leave this technic.Just try.</li>
+					<img class="fragment" src="img/ter.png">
+				</section>
+
+                <section>
+					<h2>How to get Ruby Tutorials</h2>
+					<br/>
+					<li class="fragment">I already upload the ruby lessons which is given by <font color="red">thenewboston</font> to my Dropbox account</li>
+					<br/>
+					<li class="fragment">Here is the link="http://yadi.sk/d/kcy9S40_4j4k1"</li>
+				 	
+				</section>
+                 <section>
+					<h1>Before the Questions :)</h1>
+					<p>If anyone of you wonder about what exploit is,how do we write,
+						what kind of thing you can do with exploit,I uploaded basic exploit which
+						helps to you execute the shell command that is written by python.You can find
+						here="http://yadi.sk/d/ZQBcYviA4p6U7"</p>
+				</section>
+
+				
+
+				<section>
+					<h1>Questions!</h1>
+				</section>
+
+				<section>
+					<h1>Thank You:)</h1>
+					<h2>THE END</h2>
+					<h3>BY Ahmet ERKOÇ</h3>
+					<p>Twitter: <a href="https://twitter.com/ahmeterkoc01">@ahmeterkoc01</a></p>
+					<p>Blog: <a href="http://www.turkishcoders.com">TurkishCoders.Com</a></p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: 'sky', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+    
+	</body>
+</html>
